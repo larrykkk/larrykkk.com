@@ -1,0 +1,40 @@
+<template>
+  <div class="tags">
+    <span v-for="(item, index) in tags" :key="index" @click="filterTag(item)">{{
+      item
+    }}</span>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ['tags'],
+  methods: {
+    async filterTag(tagName) {
+      console.log(tagName)
+      const res = await this.$content('articles')
+        .where({ tags: { $contains: tagName } })
+        .fetch()
+      console.log(res)
+      this.$router.push({ name: 'tags-tagName', params: { tagName } })
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+.tags {
+  span {
+    border-radius: 6px;
+    background-color: #f4f4f5;
+    color: #909399;
+    padding: 0.2rem 0.5rem;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background-color: #333;
+    }
+  }
+}
+</style>
