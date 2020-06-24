@@ -41,7 +41,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode'],
+  buildModules: [],
   /*
    ** Nuxt.js modules
    */
