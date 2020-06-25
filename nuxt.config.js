@@ -6,6 +6,7 @@ const routerBase =
         }
       }
     : {}
+const isProd = process.env.NODE_ENV === 'production'
 export default {
   mode: 'spa',
   target: 'static',
@@ -41,12 +42,18 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ['@nuxtjs/google-analytics'],
+  googleAnalytics: {
+    id: 'UA-123497084-2',
+    debug: {
+      enabled: !isProd,
+      snedHitTask: isProd
+    }
+  },
   /*
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa', '@nuxt/content'],
-  'google-gtag': { id: 'UA-123497084-2' },
   /*
    ** Build configuration
    */
