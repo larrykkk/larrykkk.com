@@ -4,6 +4,7 @@
     <div class="nav">
       <nuxt-link to="/" class="index">文章</nuxt-link>
       <nuxt-link to="/about" class="index">關於</nuxt-link>
+      <nuxt-link to="/tags" class="index">標籤</nuxt-link>
     </div>
     <!-- <div>
       <select v-model="$colorMode.preference">
