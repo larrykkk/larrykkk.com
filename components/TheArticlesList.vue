@@ -1,6 +1,6 @@
 <template>
   <div>
-      <!-- <h1 v-if=""></h1> -->
+    <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
     <ul>
       <li v-for="article in articles" :key="article.title" class="item">
         <div class="post-date">{{ article.createdAt.slice(0, 10) }}</div>
