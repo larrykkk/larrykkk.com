@@ -7,6 +7,7 @@ const routerBase =
       }
     : {}
 const isProd = process.env.NODE_ENV === 'production'
+// import axios from 'axios'
 export default {
   mode: 'spa',
   target: 'static',
@@ -46,7 +47,7 @@ export default {
   googleAnalytics: {
     id: 'UA-123497084-2',
     debug: {
-      enabled: !isProd,
+      // enabled: !isProd,
       snedHitTask: isProd
     }
   },
@@ -69,5 +70,16 @@ export default {
       }
     }
   },
-  ...routerBase
+  ...routerBase,
+  generate: {
+    fallback: 'index.html',
+    // routes() {
+    //   return axios.get('https://https://larrykkk.github.io/').then(res => {
+    //     return res.data.map(user => {
+    //       console.log(user)
+    //       return user.id
+    //     })
+    //   })
+    // }
+  }
 }
