@@ -1,16 +1,6 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/larrykkk.github.io/'
-        }
-      }
-    : {}
 const isProd = process.env.NODE_ENV === 'production'
-import axios from 'axios'
 export default {
-  mode: 'spa',
-  target: 'static',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -69,20 +59,6 @@ export default {
         minifyJS: false // this
       }
     }
-  },
-  ...routerBase,
-  generate: {
-    fallback: 'index.html',
-    routes: [
-      'index/winapplekeyboard'
-    ]
-    // routes() {
-    //   return axios.get('https://https://larrykkk.github.io/').then(res => {
-    //     return res.data.map(params => {
-    //       console.log(params)
-    //       return params.slug
-    //     })
-    //   })
-    // }
   }
+  // ...routerBase,
 }
