@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a href="/第一篇文章">test</a>
     <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
     <ul>
       <li v-for="article in articles" :key="article.title" class="item">

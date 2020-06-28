@@ -7,7 +7,7 @@ const routerBase =
       }
     : {}
 const isProd = process.env.NODE_ENV === 'production'
-// import axios from 'axios'
+import axios from 'axios'
 export default {
   mode: 'spa',
   target: 'static',
@@ -70,14 +70,17 @@ export default {
       }
     }
   },
-  // ...routerBase,
+  ...routerBase,
   generate: {
     fallback: 'index.html',
+    routes: [
+      'index/winapplekeyboard'
+    ]
     // routes() {
     //   return axios.get('https://https://larrykkk.github.io/').then(res => {
-    //     return res.data.map(user => {
-    //       console.log(user)
-    //       return user.id
+    //     return res.data.map(params => {
+    //       console.log(params)
+    //       return params.slug
     //     })
     //   })
     // }
