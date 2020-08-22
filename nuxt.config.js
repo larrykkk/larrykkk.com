@@ -1,14 +1,6 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/larrykkk.github.io/'
-        }
-      }
-    : {}
+const isProd = process.env.NODE_ENV === 'production'
 export default {
-  mode: 'spa',
-  target: 'static',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -41,7 +33,14 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode'],
+  buildModules: ['@nuxtjs/google-analytics'],
+  googleAnalytics: {
+    id: 'UA-123497084-2',
+    debug: {
+      // enabled: !isProd,
+      snedHitTask: isProd
+    }
+  },
   /*
    ** Nuxt.js modules
    */
@@ -60,6 +59,6 @@ export default {
         minifyJS: false // this
       }
     }
-  },
-  ...routerBase
+  }
+  // ...routerBase,
 }

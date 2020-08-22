@@ -11,11 +11,9 @@ export default {
   props: ['tags'],
   methods: {
     async filterTag(tagName) {
-      console.log(tagName)
       const res = await this.$content('articles')
         .where({ tags: { $contains: tagName } })
         .fetch()
-      console.log(res)
       this.$router.push({ name: 'tags-tagName', params: { tagName } })
     }
   }

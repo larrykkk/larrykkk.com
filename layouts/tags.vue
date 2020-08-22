@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
     <TheHeader class="header"></TheHeader>
-    <nuxt class="nuxt" />
+    <nuxt class="tags" />
     <TheFooter class="footer"></TheFooter>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 html {
   font-family: 'Microsoft JhengHei', 'PT Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -24,15 +24,15 @@ ul {
   padding-right: 1rem; */
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   min-height: calc(100vh - 10px);
 }
 .header {
   text-align: center;
   padding: 1rem;
 }
-.nuxt {
-  display: flex;
+.tags {
+  /* display: flex; */
   flex-direction: column;
   flex: 1 0 auto;
   padding: 1rem;

@@ -1,29 +1,32 @@
 {
   "title": "larrykkk。拉瑞的技術焦慮",
-  "name": "larrykkk-github-io",
+  "name": "larrykkk",
   "version": "1.0.0",
-  "description": "軟體工程師，想把 blog 寫下來",
+  "description": "不專業前端筆記型部落格",
   "author": "larry",
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "serve": "nuxt serve",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt build && nuxt export",
+    "generate": "nuxt build && nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build && nuxt export",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.3.2",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "axios": "^0.19.2",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.14.3",
     "push-dir": "^0.4.1",
     "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.0",
+    "@nuxtjs/google-analytics": "^2.3.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4"
