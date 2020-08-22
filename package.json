@@ -10,7 +10,7 @@
     "serve": "nuxt serve",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt build && nuxt export",
+    "generate": "nuxt build && nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build && nuxt export",
     "deploy": "push-dir --dir=dist --branch=master --cleanup"
@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "axios": "^0.19.2",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.14.3",
     "push-dir": "^0.4.1",
     "sass-loader": "^8.0.2"
   },
