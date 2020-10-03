@@ -59,6 +59,7 @@ export default {
         minifyJS: false // this
       }
     }
-  }
+  },
+  serverMiddleware: [{ path: '/api', handler: '~/api/upload.js' }]
   // ...routerBase,
 }

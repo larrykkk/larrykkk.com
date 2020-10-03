@@ -5,15 +5,8 @@
       <nuxt-link to="/" class="index">文章</nuxt-link>
       <nuxt-link to="/about" class="index">關於</nuxt-link>
       <nuxt-link to="/tags" class="index">標籤</nuxt-link>
+      <nuxt-link to="/login" class="index">登入</nuxt-link>
     </div>
-    <!-- <div>
-      <select v-model="$colorMode.preference">
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-        <option value="sepia">Sepia</option>
-      </select>
-    </div> -->
   </div>
 </template>
 
