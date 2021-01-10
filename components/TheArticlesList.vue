@@ -4,7 +4,11 @@
     <ul>
       <li v-for="article in articles" :key="article.title" class="item">
         <div class="post-date">
-          {{ article.date.slice(0, 10) || new Date().toLocaleString() }}
+          {{
+            article.date
+              ? article.date.slice(0, 10)
+              : new Date().toLocaleString()
+          }}
         </div>
         <nuxt-link :to="pathPaser(article)">
           <h2>{{ article.title }}</h2>
