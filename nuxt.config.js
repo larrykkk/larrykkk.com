@@ -2,7 +2,7 @@ const isProd = process.env.NODE_ENV === 'production'
 export default {
   target: 'static',
   generate: {
-    dir: 'docs'
+    // dir: 'docs'
   },
   /*
    ** Headers of the page

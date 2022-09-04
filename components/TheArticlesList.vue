@@ -16,11 +16,12 @@
         <nuxt-link :to="pathPaser(article)">
           <p>{{ article.description }}</p>
         </nuxt-link>
-        <tags :tags="article.tags"></tags>
+        <Tag :tags="article.tags"></Tag>
       </li>
     </ul>
   </div>
 </template>
+
 <script>
 export default {
   props: ['articles'],
@@ -40,7 +41,6 @@ export default {
   color: #000;
 }
 .item {
-  /* margin: 20px 0px; */
   padding: 20px 0px;
   a {
     overflow-wrap: anywhere;

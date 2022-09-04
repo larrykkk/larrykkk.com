@@ -19,9 +19,6 @@ export default {
     return {
       page
     }
-  },
-  mothods: {
-    // qqq() {}
   }
 }
 </script>
