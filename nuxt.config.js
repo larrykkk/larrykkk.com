@@ -2,6 +2,7 @@ const isProd = process.env.NODE_ENV === 'production'
 export default {
   ssr: false,
   target: 'static',
+  buildDir: 'doc', // for gihub pages
   /*
    ** Headers of the page
    */
