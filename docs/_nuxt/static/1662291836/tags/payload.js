@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags", (function(a){return {data:[{tags:[["2019",a],["回顧",a],["工作",a],["鍵盤",a],["隨便寫",a],["個人經驗",a]]}],fetch:{},mutations:void 0}}(1)));
