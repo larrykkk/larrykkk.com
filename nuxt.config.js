@@ -1,6 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 export default {
-  mode: 'universal',
+  ssr: false,
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -60,6 +61,6 @@ export default {
       }
     }
   },
-  serverMiddleware: [{ path: '/api', handler: '~/api/upload.js' }]
+  // serverMiddleware: [{ path: '/api', handler: '~/api/upload.js' }]
   // ...routerBase,
 }

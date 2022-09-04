@@ -33,10 +33,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-::v-deep li {
+:deep(li) {
   list-style-type: none;
 }
-::v-deep a {
+:deep(a) {
   color: #000;
 }
 .item {
