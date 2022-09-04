@@ -1,0 +1,44 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "new-post",
+    "path": "/new-post",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\new-post.vue",
+    "chunkName": "pages/new-post"
+  },
+  {
+    "name": "tags",
+    "path": "/tags",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\tags\\\\index.vue",
+    "chunkName": "pages/tags/index"
+  },
+  {
+    "name": "tags-tagName",
+    "path": "/tags/:tagName",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\tags\\\\_tagName.vue",
+    "chunkName": "pages/tags/_tagName"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "C:\\\\Users\\\\User\\\\Desktop\\\\project\\\\larrykkk.com\\\\pages\\\\_slug.vue",
+    "chunkName": "pages/_slug"
+  }
+]

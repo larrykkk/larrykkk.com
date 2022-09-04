@@ -1,0 +1,17 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Tags": {
+    "description": "Auto imported from components/Tags.vue"
+  },
+  "TheArticlesList": {
+    "description": "Auto imported from components/TheArticlesList.vue"
+  },
+  "TheFooter": {
+    "description": "Auto imported from components/TheFooter.vue"
+  },
+  "TheHeader": {
+    "description": "Auto imported from components/TheHeader.vue"
+  }
+}
