@@ -9,7 +9,7 @@ export default {
     const articles = await $content('articles').sortBy('date', 'desc').fetch()
     // console.log(articles)
     return {
-      articles
+      articles,
     }
   }
 }

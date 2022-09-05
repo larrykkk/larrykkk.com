@@ -1,8 +1,6 @@
 <template>
   <div>
-    <!-- <button @click="qqq()">123</button> -->
     <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
     <nuxt-content :document="page" />
   </div>
 </template>
@@ -12,13 +10,26 @@ export default {
   async asyncData({ $content, params, error }) {
     const page = await $content('articles', params.slug)
       .fetch()
-      .catch(err => {
+      .catch((err) => {
         error(err)
       })
 
     return {
-      page
+      page,
     }
-  }
+  },
+  head() {
+    return {
+      title: this.page.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description,
+        },
+      ],
+    }
+  },
 }
 </script>

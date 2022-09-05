@@ -10,12 +10,17 @@
               : new Date().toLocaleString()
           }}
         </div>
+
         <nuxt-link :to="pathPaser(article)">
           <h2>{{ article.title }}</h2>
         </nuxt-link>
+
         <nuxt-link :to="pathPaser(article)">
-          <p>{{ article.description }}</p>
+          <div style="margin-top: 15px; margin-bottom: 15px">
+            {{ article.description }}
+          </div>
         </nuxt-link>
+
         <Tag :tags="article.tags"></Tag>
       </li>
     </ul>
@@ -28,8 +33,8 @@ export default {
   methods: {
     pathPaser({ slug }) {
       return slug
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -39,6 +44,13 @@ export default {
 }
 :deep(a) {
   color: #000;
+}
+h2 {
+  margin-top: 5px;
+}
+.post-date {
+  font-size: 1rem;
+  color: #757575;
 }
 .item {
   padding: 20px 0px;

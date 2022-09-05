@@ -5,7 +5,6 @@
       <nuxt-link to="/" class="index">文章</nuxt-link>
       <nuxt-link to="/about" class="index">關於</nuxt-link>
       <nuxt-link to="/tags" class="index">標籤</nuxt-link>
-      <nuxt-link to="/login" class="index">登入</nuxt-link>
     </div>
   </div>
 </template>
@@ -15,8 +14,10 @@ a {
   color: #000;
 }
 .nav {
+  font-size: 1.25rem;
   a {
-    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 </style>
