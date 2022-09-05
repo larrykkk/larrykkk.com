@@ -2,7 +2,11 @@
   <div>
     <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
     <ul>
-      <li v-for="article in articles" :key="article.title" class="item">
+      <li
+        v-for="article in articles.filter((x) => !x.draft)"
+        :key="article.title"
+        class="item"
+      >
         <div class="post-date">
           {{
             article.date
