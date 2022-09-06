@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
-    <ul>
+    <!-- <ul> -->
       <li
         v-for="article in articles.filter((x) => !x.draft)"
         :key="article.title"
@@ -27,7 +27,7 @@
 
         <Tag :tags="article.tags"></Tag>
       </li>
-    </ul>
+    <!-- </ul> -->
   </div>
 </template>
 
@@ -58,6 +58,9 @@ h2 {
 }
 .item {
   padding: 20px 0px;
+  +.item {
+    padding-top: 20px;
+  }
   a {
     overflow-wrap: anywhere;
   }

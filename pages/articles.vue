@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>標籤列表</h1>
+    <h2>標籤列表</h2>
     <div class="tags">
       <Tag
         class="tags"
@@ -12,12 +12,20 @@
         {{ `(${count})` }}
       </Tag>
     </div>
+    <h2>文章列表</h2>
+    <li class="articles" v-for="article in articles.filter((x) => !x.draft)" :key="article.title">
+      <nuxt-link :to="pathPaser(article)"
+        ><h3 style="display: inline">{{ article.title }}</h3>
+      </nuxt-link>
+      <!-- <span class="date">{{ article.date.slice(0, 10) }}</span> -->
+    </li>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content }) {
+    const articles = await $content('articles').sortBy('date', 'desc').fetch()
     const payload = await $content('articles').only(['tags']).fetch()
     const array = payload.reduce((prev, element) => {
       return prev.concat(element.tags)
@@ -33,6 +41,7 @@ export default {
     tags = Object.entries(tags).sort((a, b) => b[1] - a[1])
 
     return {
+      articles,
       tags,
     }
   },
@@ -43,6 +52,9 @@ export default {
       //   .fetch()
       this.$router.push({ name: 'tags-tagName', params: { tagName } })
     },
+    pathPaser({ slug }) {
+      return slug
+    },
   },
 }
 </script>
@@ -50,5 +62,16 @@ export default {
 <style lang="scss" scoped>
 .tags {
   display: flex;
+}
+
+.articles {
+  h3 {
+    font-size: 1.25rem;
+  }
+  .date {
+    // margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(117, 117, 117, 1);
+  }
 }
 </style>

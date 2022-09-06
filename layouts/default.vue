@@ -2,7 +2,7 @@
   <div class="wrapper">
     <TheHeader class="header"></TheHeader>
     <nuxt class="nuxt" />
-    <TheFooter class="footer"></TheFooter>
+    <!-- <TheFooter class="footer"></TheFooter> -->
   </div>
 </template>
 
@@ -35,7 +35,8 @@ ul {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  padding: 1rem;
+  padding: 2rem;
+  padding-top: 0;
 }
 .footer {
   text-align: center;
