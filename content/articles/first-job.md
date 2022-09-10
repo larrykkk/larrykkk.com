@@ -1,4 +1,5 @@
 ---
+slug: first-job
 title: 第一份工作
 date: 2020-01-18 22:10:37
 tags:

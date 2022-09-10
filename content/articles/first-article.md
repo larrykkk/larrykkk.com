@@ -1,4 +1,5 @@
 ---
+slug: 'first-article'
 title: 第一篇文章
 date: 2019-09-21 01:47:12
 tags:

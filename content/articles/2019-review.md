@@ -1,4 +1,5 @@
 ---
+slug: 2019-review
 title: 2019 回顧
 date: 2019-12-28 22:44:15
 tags:
