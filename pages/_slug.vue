@@ -33,3 +33,12 @@ export default {
   },
 }
 </script>
+
+<style>
+.nuxt-content a {
+  color: #1970af;
+}
+.nuxt-content ul {
+  padding-left: 20px;
+}
+</style>

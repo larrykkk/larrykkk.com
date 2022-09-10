@@ -25,12 +25,13 @@ a {
 }
 
 .tag {
+  margin-top: 5px;
+  margin-bottom: 5px;
   span {
     border-radius: 6px;
     background-color: #f4f4f5;
     color: #6d6f73;
     padding: 0.2rem 0.5rem;
-    margin-bottom: 10px;
     margin-right: 5px;
     &:hover {
       cursor: pointer;

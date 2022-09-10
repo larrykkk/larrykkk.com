@@ -62,6 +62,7 @@ export default {
 <style lang="scss" scoped>
 .tags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .articles {
@@ -69,7 +70,6 @@ export default {
     font-size: 1.25rem;
   }
   .date {
-    // margin-left: 10px;
     margin-right: 10px;
     color: rgba(117, 117, 117, 1);
   }
