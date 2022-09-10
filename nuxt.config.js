@@ -56,7 +56,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/pwa',
     '@nuxt/content',
     ['@nuxtjs/google-gtag', { id: 'G-YY1ECTGSJK' }]
   ],
