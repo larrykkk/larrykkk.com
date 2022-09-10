@@ -15,11 +15,15 @@
 
 <script>
 export default {
-  props: ['tags']
+  props: ['tags'],
 }
 </script>
 
 <style lang="scss" scoped>
+a {
+  text-decoration: none;
+}
+
 .tag {
   span {
     border-radius: 6px;

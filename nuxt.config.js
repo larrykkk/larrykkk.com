@@ -16,11 +16,11 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
       {
-        src: '"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1036162710845309',
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1036162710845309',
         async: true,
         crossorigin: 'anonymous'
       }
