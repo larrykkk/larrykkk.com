@@ -16,7 +16,7 @@ tags:
 
 ## 2018 年，剛出道社畜的樣貌
  
-想當年那個無知的我，[第一份工作](https://www.larrykkk.com/%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C)就是個大挑戰。現在拿出來當然是一則好笑的笑話，但當年的我可是非常痛苦的，如果你還不夠認識我的話可以看一下我第一份工作有多坎坷。
+想當年那個無知的我，[第一份工作](https://www.larrykkk.com/first-job)就是個大挑戰。現在拿出來當然是一則好笑的笑話，但當年的我可是非常痛苦的，如果你還不夠認識我的話可以看一下我第一份工作有多坎坷。
 
 ## 來到一間接案公司
 
@@ -68,7 +68,7 @@ tags:
 再來是有感那時候很常遇到建立新專案的時候，每次打 API 都會看到瀏覽器滿滿的紅字。後端每次都會忘記設定 CORS，屢試不爽。
 於是我就開始研究如何從前端這邊跨過 CORS 的設定且在前端讀書會分享了 http-proxy-middleware 是如何運作的。
 
-- [React Native](https://medium.com/%E6%8B%89%E7%91%9E%E8%80%8D%E5%8C%97%E4%B8%83/2021-%E4%BD%BF%E7%94%A8-react-native-and-expo-%E4%B9%8B%E7%AD%86%E8%A8%98-8c8b4a347a36) (Medium)
+- [2021 使用 React Native and Expo 之筆記](https://medium.com/%E6%8B%89%E7%91%9E%E8%80%8D%E5%8C%97%E4%B8%83/2021-%E4%BD%BF%E7%94%A8-react-native-and-expo-%E4%B9%8B%E7%AD%86%E8%A8%98-8c8b4a347a36) (Medium)
 
 然後之後我們公司有想要做 App 的開發，所以有研究了一下 React Native，也做了一個小小的 Demo (不過專案已經找不到了Q_Q)。
 
