@@ -1,7 +1,7 @@
 ---
-draft: true
-title: 2022 我的前端工程師職涯四週年回顧
-date: 2022-09-05 13:13:13
+slug: 'my-2022-FE-life-review-1'
+title: 2022 我的前端工程師職涯四週年回顧 (一)
+date: 2022-10-01 0:12:12
 tags:
   - 個人經驗
   - 回顧
@@ -11,7 +11,7 @@ tags:
 
 最近剛好有一些心境上的不一樣想法，沒想到我成為前端工程師也已經四年了，如果再不記下一點東西我可能之後就越來越淡忘了，於是我想趁現在我還記得的時候寫下來，也順便紀錄自己過往的人生。
 
-因次部落格又重新開張了(沒錯，這次第二次開站了，再度灑花
+因次部落格又重新開張了(沒錯，這次第二次開站了，再度灑花 🎉
 <!--more-->
 
 ## 2018 年，剛出道社畜的樣貌
@@ -37,8 +37,8 @@ tags:
 ### 政府專案相較民間專案的難搞處
 
 政府專案該有的屎也應有盡有，比如:
-- IE11
-- 無障礙檢測
+- 99% 需要支援 IE11
+- 無障礙檢測 (我們公司還因此開源了一項無障礙 UI 框架 [Piman](https://ya-sai.github.io/piman/))
 - 舊技術債，PHP + jQuery 大雜燴
 
 不過我們是菜逼八嘛，剛開始吃點苦頭不算什麼的對吧!
@@ -51,38 +51,25 @@ tags:
 
 我印象最深刻的分享的內容有:
 - **前端(Vue.js)的單元測試(@vue/test-utils + Jest)要怎麼寫**
-  - [Vue.js 單元測試使用 Jest](https://docs.google.com/presentation/d/1rvcZEWFPeYOnXGQrsNvHuY_sPDZ5y5EZjTw04f_tojE/edit#slide=id.p)
-  - [當老闆說要寫測試](https://docs.google.com/presentation/d/1hdunRRY22N3rCAW_O31ACkfyz3Obx-9osoOSDZAe3Cc/edit#slide=id.p)
-  - [當老闆說要寫測試之我的測試狂噴 Error (Vue.js)](https://docs.google.com/presentation/d/1pwo7deu79X3yMXA6gidSoAChnjyHW5KniEgYD3wqQI0/edit#slide=id.p)
+  - [Vue.js 單元測試使用 Jest](https://docs.google.com/presentation/d/1rvcZEWFPeYOnXGQrsNvHuY_sPDZ5y5EZjTw04f_tojE/edit#slide=id.p) (PPT)
+  - [當老闆說要寫測試](https://docs.google.com/presentation/d/1hdunRRY22N3rCAW_O31ACkfyz3Obx-9osoOSDZAe3Cc/edit#slide=id.p) (PPT)
+  - [當老闆說要寫測試之我的測試狂噴 Error (Vue.js)](https://docs.google.com/presentation/d/1pwo7deu79X3yMXA6gidSoAChnjyHW5KniEgYD3wqQI0/edit#slide=id.p) (PPT)
+
 總共有三部曲，不過當時的簡報能力可能差一點，謹慎觀看XD
 
-雖然回想起來那時候根本就是菜逼巴，表現差強人意哈哈
 不過那時候為了分享給大家而苦心鑽研的內容，至今為止都還很印象深刻，在往後的工作中也有派上用場。
 
 - **Nuxt.js 2.13+ Fetch 的技巧**
 因為那時候大家都還在用 asyncData，而我剛好有特別去研究了一下新的 fetch API 的 document
 (本來說好要教同事 Nuxt.js 的，但我後來沒做XD，原因是太累加上我發現大家好像會的都差不多了o_ o，所以就沒做)
 
-- **[如何透過 http-proxy-middleware 繞過 CORS 限制](https://www.youtube.com/watch?v=Dk96hJmnT8k&t=954s)**
+- [如何透過 http-proxy-middleware 繞過 CORS 限制](https://www.youtube.com/watch?v=Dk96hJmnT8k&t=954s) (Youtube)
 
 再來是有感那時候很常遇到建立新專案的時候，每次打 API 都會看到瀏覽器滿滿的紅字。後端每次都會忘記設定 CORS，屢試不爽。
 於是我就開始研究如何從前端這邊跨過 CORS 的設定且在前端讀書會分享了 http-proxy-middleware 是如何運作的。
 
-- **[React Native](https://medium.com/%E6%8B%89%E7%91%9E%E8%80%8D%E5%8C%97%E4%B8%83/2021-%E4%BD%BF%E7%94%A8-react-native-and-expo-%E4%B9%8B%E7%AD%86%E8%A8%98-8c8b4a347a36)**
+- [React Native](https://medium.com/%E6%8B%89%E7%91%9E%E8%80%8D%E5%8C%97%E4%B8%83/2021-%E4%BD%BF%E7%94%A8-react-native-and-expo-%E4%B9%8B%E7%AD%86%E8%A8%98-8c8b4a347a36) (Medium)
 
 然後之後我們公司有想要做 App 的開發，所以有研究了一下 React Native，也做了一個小小的 Demo (不過專案已經找不到了Q_Q)。
 
-## 第一次換工作
-
-## 來到一間新創公司
-
-## 自己接案
-
-## 成本需要謹慎評估
-
-## 工作上的轉變
-
-<!-- ## 為甚麼而工作
-
-## 我沒有看到你任何的表現
- -->
+(未完待續...)

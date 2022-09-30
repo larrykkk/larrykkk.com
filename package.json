@@ -11,9 +11,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "gd": "npm run generate && npm run cpcname && npm run push-dir",
     "cpcname": "shx cp ./CNAME ./dist/CNAME",
-    "push-dir": "push-dir --dir=dist --branch=source --cleanup",
-    "gd": "npm run generate && npm run cpcname && npm run push-dir"
+    "push-dir": "push-dir --dir=dist --branch=source --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
