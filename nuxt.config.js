@@ -44,7 +44,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/google-analytics'],
+  buildModules: ['@nuxtjs/google-analytics', '@/modules/sitemapRouteGenerator'],
   googleAnalytics: {
     id: 'UA-123497084-2',
     debug: {
@@ -57,8 +57,15 @@ export default {
    */
   modules: [
     '@nuxt/content',
-    ['@nuxtjs/google-gtag', { id: 'G-YY1ECTGSJK' }]
+    ['@nuxtjs/google-gtag', { id: 'G-YY1ECTGSJK' }],
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://larrykkk.com',
+    gzip: true
+  },
+
   /*
    ** Build configuration
    */
