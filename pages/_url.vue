@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>{{ page.title }}</h1>
+    <Tag :tags="page.tags"></Tag> 
+    <h1>{{ page.slug }}</h1>
     <nuxt-content :document="page" />
   </div>
 </template>
@@ -8,19 +9,24 @@
 <script>
 export default {
   async asyncData({ $content, params, error }) {
-    const page = await $content('articles', params.slug)
+    console.log({ $content, params, error })
+    const page = await $content('articles')
+      .where({ url: params.url })
+      .limit(1)
       .fetch()
       .catch((err) => {
         error(err)
       })
 
+    console.log(page)
+
     return {
-      page,
+      page: page[0],
     }
   },
   head() {
     return {
-      title: this.page.title,
+      title: this.page.slug,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {

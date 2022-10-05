@@ -1,4 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
+// import { defineNuxtConfig } from 'nuxt'
+
 export default {
   target: 'static',
   /*
@@ -35,7 +37,7 @@ export default {
    */
   components: true,
   css: [
-    '@/assets/css/global.css'
+    '@/assets/css/global.scss'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -44,7 +46,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/google-analytics', '@/modules/sitemapRouteGenerator'],
+  buildModules: [
+    '@nuxtjs/google-analytics',
+    '@/modules/sitemapRouteGenerator',
+    '@nuxtjs/color-mode'
+  ],
   googleAnalytics: {
     id: 'UA-123497084-2',
     debug: {
@@ -64,6 +70,17 @@ export default {
   sitemap: {
     hostname: 'https://larrykkk.com',
     gzip: true
+  },
+
+  colorMode: {
+    preference: 'light', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode'
   },
 
   /*

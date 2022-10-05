@@ -1,22 +1,21 @@
 <template>
   <div>
     <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
-    <!-- <ul> -->
       <li
         v-for="article in articles.filter((x) => !x.draft)"
-        :key="article.title"
+        :key="article.slug"
         class="item"
       >
         <div class="post-date">
           {{
-            article.date
-              ? article.date.slice(0, 10)
+            article.createdAt
+              ? article.createdAt.slice(0, 10)
               : new Date().toLocaleString()
           }}
         </div>
 
         <nuxt-link :to="pathPaser(article)">
-          <h2>{{ article.title }}</h2>
+          <h2>{{ article.title || article.slug }}</h2>
         </nuxt-link>
 
         <nuxt-link :to="pathPaser(article)">
@@ -27,7 +26,6 @@
 
         <Tag :tags="article.tags"></Tag>
       </li>
-    <!-- </ul> -->
   </div>
 </template>
 
@@ -35,8 +33,8 @@
 export default {
   props: ['articles'],
   methods: {
-    pathPaser({ slug }) {
-      return slug
+    pathPaser({ slug, url }) {
+      return url || slug
     },
   },
 }

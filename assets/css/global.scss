@@ -1,0 +1,52 @@
+* {
+    color: #292929;
+}
+
+html {
+    font-family: 'Microsoft JhengHei', 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    background-color: #fff;
+}
+
+ul {
+    padding: 0px;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 10px);
+}
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.nuxt {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

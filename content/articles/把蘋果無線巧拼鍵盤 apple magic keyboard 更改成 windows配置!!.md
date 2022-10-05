@@ -1,6 +1,6 @@
 ---
-title: 把蘋果無線巧拼鍵盤 apple magic keyboard 更改成 windows配置!!
-date: 2019-09-26 23:26:25
+createdAt: 2019-09-26 23:26:25
+url: winapplekeyboard
 tags: 
   - 鍵盤
 ---
