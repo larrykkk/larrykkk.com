@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Tag :tags="page.tags"></Tag> 
+    <Tag :tags="page.tags"></Tag>
     <h1>{{ page.slug }}</h1>
     <nuxt-content :document="page" />
   </div>
@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  layout: 'article',
   async asyncData({ $content, params, error }) {
     console.log({ $content, params, error })
     const page = await $content('articles')
@@ -28,11 +29,33 @@ export default {
     return {
       title: this.page.slug,
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'description',
-          name: 'description',
+          hid: 'og:title',
+          property: 'og:title',
+          content: '',
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.page.keywords,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
           content: this.page.description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content:
+            this.page.image ||
+            `
+            https://ogi.sh/wCmks9_sN?
+              title=${this.page.title}&
+              subtitle=${this.page.sbutitle || ''}&
+              bg=4&
+              time=${this.page.time || ''}
+          `,
         },
       ],
     }
@@ -46,5 +69,8 @@ export default {
 }
 .nuxt-content ul {
   padding-left: 20px;
+}
+.nuxt-content-container img {
+  width: 100%;
 }
 </style>

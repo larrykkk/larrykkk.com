@@ -15,6 +15,11 @@ export default {
         hid: 'description',
         name: 'description',
         content: '記錄著 larrykkk 的技術焦慮'
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
       }
     ],
     link: [
