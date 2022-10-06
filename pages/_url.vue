@@ -32,7 +32,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: '',
+          content: this.page.slug,
         },
         {
           hid: 'keywords',
@@ -49,13 +49,7 @@ export default {
           property: 'og:image',
           content:
             this.page.image ||
-            `
-            https://ogi.sh/wCmks9_sN?
-              title=${this.page.title}&
-              subtitle=${this.page.sbutitle || ''}&
-              bg=4&
-              time=${this.page.time || ''}
-          `,
+            `https://ogi.sh/wCmks9_sN?title=${this.page.slug}&subtitle=${this.page.sbutitle || ''}&bg=4&time=${this.page.time || ''}`,
         },
       ],
     }
