@@ -48,8 +48,8 @@ export default {
     async filterTag(tagName) {
       this.$router.push({ name: 'tags-tagName', params: { tagName } })
     },
-    pathPaser({ slug }) {
-      return slug
+    pathPaser({ slug, url }) {
+      return '/' + (url || slug)
     },
   },
 }

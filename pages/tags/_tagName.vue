@@ -13,8 +13,8 @@ export default {
     }
   },
   methods: {
-    pathPaser({ slug }) {
-      return slug
+    pathPaser({ slug, url }) {
+      return '/' + (url || slug)
     }
   }
 }

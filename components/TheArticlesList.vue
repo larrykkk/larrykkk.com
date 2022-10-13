@@ -1,31 +1,31 @@
 <template>
   <div>
     <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
-      <li
-        v-for="article in articles.filter((x) => !x.draft)"
-        :key="article.slug"
-        class="item"
-      >
-        <div class="post-date">
-          {{
-            article.createdAt
-              ? article.createdAt.slice(0, 10)
-              : new Date().toLocaleString()
-          }}
+    <li
+      v-for="article in articles.filter((x) => !x.draft)"
+      :key="article.slug"
+      class="item"
+    >
+      <div class="post-date">
+        {{
+          article.createdAt
+            ? article.createdAt.slice(0, 10)
+            : new Date().toLocaleString()
+        }}
+      </div>
+
+      <nuxt-link :to="pathPaser(article)">
+        <h2>{{ article.title || article.slug }}</h2>
+      </nuxt-link>
+
+      <nuxt-link :to="pathPaser(article)">
+        <div style="margin-top: 15px; margin-bottom: 15px">
+          {{ article.description }}
         </div>
+      </nuxt-link>
 
-        <nuxt-link :to="pathPaser(article)">
-          <h2>{{ article.title || article.slug }}</h2>
-        </nuxt-link>
-
-        <nuxt-link :to="pathPaser(article)">
-          <div style="margin-top: 15px; margin-bottom: 15px">
-            {{ article.description }}
-          </div>
-        </nuxt-link>
-
-        <Tag :tags="article.tags"></Tag>
-      </li>
+      <Tag :tags="article.tags"></Tag>
+    </li>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
   props: ['articles'],
   methods: {
     pathPaser({ slug, url }) {
-      return url || slug
+      return '/' + (url || slug)
     },
   },
 }
@@ -56,7 +56,7 @@ h2 {
 }
 .item {
   padding: 20px 0px;
-  +.item {
+  + .item {
     padding-top: 20px;
   }
   a {
