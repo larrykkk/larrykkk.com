@@ -71,6 +71,7 @@ typings/
 # Nuxt generate
 dist
 .output
+.sqllite
 
 # vuepress build output
 .vuepress/dist
