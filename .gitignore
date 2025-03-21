@@ -92,5 +92,4 @@ sw.*
 *.swp
 
 # SQLite files in the output directory
-.output/**/*.sqlite
-.output/**/*.sqlite-*
+.data/**/*
