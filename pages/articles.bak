@@ -13,7 +13,7 @@
       </Tag>
     </div>
     <h2>文章列表</h2>
-    <li class="articles" v-for="article in articles.filter((x) => !x.draft)" :key="article.slug">
+    <li class="articles" v-for="article in articles" :key="article.slug">
       <nuxt-link :to="pathPaser(article)"
         ><h3 style="display: inline">{{ article.slug }}</h3>
       </nuxt-link>

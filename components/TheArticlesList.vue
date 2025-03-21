@@ -1,43 +1,41 @@
 <template>
   <div>
-    <h1 v-if="$route.name === 'tags-tagName'">{{ $route.params.tagName }}</h1>
+    <h1 v-if="route.name === 'tags-tagName'">{{ route.params.tagName }}</h1>
     <li
-      v-for="article in articles.filter((x) => !x.draft)"
+      v-for="article in articles"
       :key="article.slug"
       class="item"
     >
       <div class="post-date">
         {{
-          article.createdAt
-            ? article.createdAt.slice(0, 10)
-            : new Date().toLocaleString()
+          article.meta?.createdAt
+            ? new Date(article.meta.createdAt).toLocaleDateString('zh-TW')
+            : new Date().toLocaleDateString('zh-TW')
         }}
       </div>
 
-      <nuxt-link :to="pathPaser(article)">
+      <NuxtLink :to="article.meta?.url || ''">
         <h2>{{ article.title || article.slug }}</h2>
-      </nuxt-link>
+      </NuxtLink>
 
-      <nuxt-link :to="pathPaser(article)">
+      <NuxtLink :to="article.meta?.url || ''">
         <div style="margin-top: 15px; margin-bottom: 15px">
           {{ article.description }}
         </div>
-      </nuxt-link>
+      </NuxtLink>
 
-      <Tag :tags="article.tags"></Tag>
+      <Tag :tags="article.meta?.tags || []"></Tag>
     </li>
   </div>
 </template>
 
-<script>
-export default {
-  props: ['articles'],
-  methods: {
-    pathPaser({ slug, url }) {
-      return '/' + (url || slug)
-    },
-  },
-}
+<script setup lang="ts">
+import { useRoute } from '#imports'
+
+const route = useRoute()
+const props = defineProps<{
+  articles: any[]
+}>()
 </script>
 
 <style lang="scss" scoped>

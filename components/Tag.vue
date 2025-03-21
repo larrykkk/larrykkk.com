@@ -1,22 +1,22 @@
 <template>
   <div class="tag">
-    <nuxt-link
+    <NuxtLink
       v-for="(tagName, index) in tags"
       :key="index"
-      :to="{ name: 'tags-tagName', params: { tagName } }"
+      :to="`/tags/${tagName}`"
     >
-      <span
-        >{{ tagName }}
+      <span>
+        {{ tagName }}
         <slot></slot>
       </span>
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>
 
-<script>
-export default {
-  props: ['tags'],
-}
+<script setup lang="ts">
+defineProps<{
+  tags: string[]
+}>()
 </script>
 
 <style lang="scss" scoped>

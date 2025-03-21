@@ -5,35 +5,33 @@
   "description": "不專業前端筆記型部落格",
   "author": "larry",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
-    "serve": "nuxt serve",
+    "dev": "nuxt dev",
     "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
+    "preview": "nuxt preview",
     "gd": "npm run generate && npm run cpcname && npm run push-dir",
     "cpcname": "shx cp ./CNAME ./dist/CNAME",
-    "push-dir": "push-dir --dir=dist --branch=source --cleanup"
+    "push-dir": "push-dir --dir=dist --branch=source --cleanup",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxt/image": "^0.7.1",
-    "@nuxtjs/google-gtag": "^1.0.4",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "axios": "^0.27.2",
-    "body-parser": "^1.20.0",
-    "nuxt": "^2.15.8",
+    "@nuxt/content": "^3.4.0",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "nuxt-gtag": "^1.2.0",
+    "nuxt": "^3.10.3",
     "push-dir": "^0.4.1",
-    "sass": "^1.54.8",
-    "sass-loader": "^10.3.1",
-    "webpack": "^4.46.0"
+    "sass": "^1.71.1"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.1.1",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1",
-    "shx": "^0.3.4"
+    "@nuxt/types": "^2.17.3",
+    "@types/node": "^20.11.28",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "shx": "^0.3.4",
+    "typescript": "^5.4.2"
   }
 }

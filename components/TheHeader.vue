@@ -1,8 +1,8 @@
 <template>
   <div class="nav">
     <nuxt-link to="/"><h1>拉瑞的技術焦慮</h1></nuxt-link>/
-    <nuxt-link to="/articles">文章</nuxt-link>/
-    <nuxt-link to="/about">關於</nuxt-link>
+    <!-- <nuxt-link to="/articles">文章</nuxt-link>/ -->
+    <nuxt-link to="/about">About</nuxt-link>
   </div>
 </template>
 
