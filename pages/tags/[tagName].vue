@@ -8,8 +8,13 @@ const { data: articles } = await useAsyncData(`tag-${tagName}`, async () => {
   const allArticles = await queryCollection('content').all()
   return allArticles.filter(article => article.meta?.tags?.includes(tagName))
 })
+
+console.log('Found articles:', articles.value)
 </script>
 
 <template>
-  <TheArticlesList :articles="articles || []" />
+  <div>
+    <h1 class="text-2xl font-bold mb-4">標籤: {{ tagName }}</h1>
+    <TheArticlesList :articles="articles || []" />
+  </div>
 </template>

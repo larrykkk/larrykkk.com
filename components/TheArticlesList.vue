@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 v-if="route.name === 'tags-tagName'">{{ route.params.tagName }}</h1>
     <li
       v-for="article in articles"
       :key="article.slug"
