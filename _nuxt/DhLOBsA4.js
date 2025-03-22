@@ -1,1 +1,0 @@
-import{_ as c}from"./Xv_aamz6.js";import{_,c as a,o as n,b as e,a6 as s}from"./3lTeNGBi.js";import"./cn4CRJ_4.js";const r={},p={class:"wrapper"};function d(m,f){const o=c,t=s;return n(),a("div",p,[e(o,{class:"header"}),e(t,{class:"nuxt"})])}const x=_(r,[["render",d],["__scopeId","data-v-7a5fc87d"]]);export{x as default};

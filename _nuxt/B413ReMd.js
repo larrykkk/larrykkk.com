@@ -1,0 +1,1 @@
+import{_ as n,c as r,a as t,o as a}from"./CEMbUqSB.js";const l={};function o(s,e){return a(),r("div",null,e[0]||(e[0]=[t("h2",null,"關於我",-1),t("p",null," 你好我是拉瑞 ",-1),t("a",{href:"https://github.com/larrykkk",target:"_blank"},"Github",-1),t("a",{href:"https://www.linkedin.com/in/larrytutw/",target:"_blank"},"Linkedin",-1)]))}const i=n(l,[["render",o]]);export{i as default};
