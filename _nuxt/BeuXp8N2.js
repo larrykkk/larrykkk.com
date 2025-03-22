@@ -1,0 +1,1 @@
+import{_}from"./BUlqQvdi.js";import{_ as c,c as n,o as s,b as e,a6 as a}from"./DO8Wu8Dl.js";import"./DcX7MfGX.js";const r={},p={class:"wrapper"};function m(d,f){const o=_,t=a;return s(),n("div",p,[e(o,{class:"header"}),e(t,{class:"nuxt"})])}const x=c(r,[["render",m]]);export{x as default};
