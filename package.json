@@ -19,8 +19,8 @@
   "dependencies": {
     "@nuxt/content": "^3.4.0",
     "@nuxtjs/color-mode": "^3.3.2",
+    "nuxt": "^3.16.2",
     "nuxt-gtag": "^1.2.0",
-    "nuxt": "^3.10.3",
     "push-dir": "^0.4.1",
     "sass": "^1.71.1"
   },

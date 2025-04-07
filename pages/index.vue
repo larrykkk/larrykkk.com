@@ -6,7 +6,6 @@ articles.value = articles.value?.sort((a: any, b: any) => {
   const dateB = new Date(b.meta?.createdAt || 0).getTime()
   return dateB - dateA  // 較新的日期（較大的時間戳）會排在前面
 })
-console.log(articles)
 </script>
 
 <template>

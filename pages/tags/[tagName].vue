@@ -9,7 +9,7 @@ const { data: articles } = await useAsyncData(`tag-${tagName}`, async () => {
   return allArticles.filter(article => article.meta?.tags?.includes(tagName))
 })
 
-console.log('Found articles:', articles.value)
+// console.log('Found articles:', articles.value)
 </script>
 
 <template>
