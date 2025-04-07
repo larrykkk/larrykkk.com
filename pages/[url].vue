@@ -33,14 +33,20 @@ definePageMeta({
   </div>
 </template>
 
-<style>
-.nuxt-content a {
-  color: #1970af;
-}
-.nuxt-content ul {
-  padding-left: 20px;
-}
-.nuxt-content-container img {
-  width: 100%;
+<style lang="scss" scoped>
+
+.nuxt {
+  margin: 0 16px;
+  background-color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  ul {
+    padding-left: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 </style>

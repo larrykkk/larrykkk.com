@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-    <nuxt-link to="/"><h1>拉瑞的技術焦慮</h1></nuxt-link>
+    <nuxt-link to="/"><h1>Home</h1></nuxt-link>
     <!-- / -->
     <!-- <nuxt-link to="/blog">文章</nuxt-link>/ -->
     <!-- <nuxt-link to="/about">About</nuxt-link> -->
@@ -13,7 +13,7 @@ h1 {
   font-size: 2rem;
 }
 a {
-  color: #000;
+  color: #2F2F2F;
   text-decoration: none;
 }
 .nav {
@@ -21,7 +21,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  // min-height: 80px;
   font-size: 1.25rem;
   margin: 0 16px;
   border-radius: 8px;

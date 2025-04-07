@@ -43,13 +43,10 @@ const props = defineProps<{
   list-style-type: none;
 }
 :deep(a) {
-  color: #000;
+  color: #2F2F2F;
 }
 a {
   text-decoration: none;
-}
-h2 {
-  margin-top: 5px;
 }
 .post-date {
   font-size: 1rem;

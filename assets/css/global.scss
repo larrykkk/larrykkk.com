@@ -1,6 +1,6 @@
-.wrapper {
-    color: #292929;
-}
+// .wrapper {
+//     color: #292929;
+// }
 
 html {
     font-family: 'Microsoft JhengHei', 'PT Sans', Helvetica, Arial, sans-serif;
@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0px;
-    background-color: #f6efe2;
+    background-color: #F5F3EF;
 }
 
 ul {
@@ -42,9 +42,13 @@ ul {
 }
 
 a {
-    color: #000;
+    color: #2F2F2F;
 
     &:hover {
         text-decoration: underline;
     }
+}
+
+h2 a {
+    text-decoration: none !important;
 }
