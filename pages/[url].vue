@@ -41,11 +41,12 @@ definePageMeta({
   margin-top: 16px;
   border-radius: 8px;
   padding: 16px;
-  ul {
-    padding-left: 20px;
+  :deep(ul) {
+    list-style-type: disc;
+    margin-left: 2rem;
   }
 
-  img {
+  :deep(img) {
     width: 100%;
   }
 }
