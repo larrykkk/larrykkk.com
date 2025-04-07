@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>文章</h2>
     <li
       v-for="article in articles"
       :key="article.slug"
@@ -14,7 +15,7 @@
       </div>
 
       <NuxtLink :to="article.meta?.url || ''">
-        <h2>{{ article.title || article.slug }}</h2>
+        <h3>{{ article.title || article.slug }}</h3>
       </NuxtLink>
 
       <NuxtLink :to="article.meta?.url || ''">
@@ -43,6 +44,9 @@ const props = defineProps<{
 }
 :deep(a) {
   color: #000;
+}
+a {
+  text-decoration: none;
 }
 h2 {
   margin-top: 5px;
