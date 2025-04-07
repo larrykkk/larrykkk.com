@@ -15,19 +15,24 @@
     </p>
 
     其他:<a href="https://github.com/larrykkk" target="_blank">GitHub</a>
-    <h2>專案</h2>
+    <h2>經歷 & 專案</h2>
     <ul>
       <li>
+        2021 - 2024
+        <br>
         <a
-          href="https://bookfastpos.com/"
+          href="/projects-in-bookfast"
           target="_blank"
-        >BookFast</a> - 運動產業管理 SaaS 平台
+        >BookFast - 運動產業管理 SaaS 平台</a>
       </li>
-      <li>星X銀行的內部使用的商業檔案查詢系統</li>
-      <li>台X市政府開放資料平台 & 後台</li>
-      <!-- <li>台X市政府知識平台</li>
-      <li>某政黨官網 & 後台</li> -->
-      <li>環X署開放資料平台</li>
+      <li>
+        2018-2021
+        <br>
+        <a
+          href="/my-2022-FE-life-review-1"
+          target="_blank"
+        >BluePlanet - KYC 系統、政府開放資料平台前後台、政黨官網</a>
+      </li>
     </ul>
   </div>
 </template>

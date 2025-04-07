@@ -4,14 +4,15 @@ url: winapplekeyboard
 tags: 
   - 鍵盤
 ---
+
+![Image](https://github.com/user-attachments/assets/506eaee3-b694-4e7a-840d-3dc272aa08a0)
+
 ### 介紹
 最近入手了蘋果的巧拼鍵盤，結果發現他的鍵盤位置的左下角是 fn 鍵而不是 ctrl，讓我覺得跟其他鍵盤比巧來用得太卡了。
 
 畢竟工程師最常用的就是 ctrl + 各種按鈕了  
 
 <!--more-->
-
-![test](https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MLA22CH?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1496100487492)  
 
 那我最主要想要的功能就是把 ctrl 鍵換成在鍵盤的左下角這樣跟原本的鍵盤操作才會一致  
 
