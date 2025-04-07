@@ -23,6 +23,7 @@ articles.value = articles.value?.sort((a: any, b: any) => {
   display: flex;
   flex-direction: row;
   padding: 12px;
+  padding-top: 4px;
 }
 
 .container > div {
@@ -42,8 +43,8 @@ articles.value = articles.value?.sort((a: any, b: any) => {
   border-radius: 8px;
   padding: 8px 16px;
   -webkit-box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
--moz-box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
-box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
+  -moz-box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
+  box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
 }
 
 #articles-list {
@@ -59,5 +60,4 @@ box-shadow: 8px 10px 5px -8px rgba(199,199,199,1);
     max-width: 100%;
   }
 }
-
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <!-- <TheHeader class="header" /> -->
+    <TheHeader class="header" />
     <NuxtPage class="nuxt" />
   </div>
 </template>
